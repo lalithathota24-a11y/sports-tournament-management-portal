@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  color: #202b3c;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.main-navbar {
+  min-height: 68px;
+  background: #14213d;
+  box-shadow: 0 3px 14px rgba(12, 25, 48, 0.16);
+}
+
+.navbar-brand {
+  letter-spacing: 0.7px;
+  font-size: 17px;
+}
+
+.brand-icon {
+  margin-right: 7px;
+}
+
+.admin-label {
+  color: #dce5f3;
+  font-size: 13px;
+}
+
+.app-layout {
+  display: flex;
+  min-height: calc(100vh - 68px);
+}
+
+.sidebar {
+  width: 245px;
+  min-width: 245px;
+  background: #14213d;
+  padding: 27px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-heading,
+.eyebrow {
+  color: #8a96a9;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 4px 12px 14px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 13px 14px;
+  border-radius: 9px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: #2c5bd7;
+  color: #fff;
+}
+
+.menu-icon {
+  width: 22px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.sidebar-footer {
+  color: #8190a8;
+  font-size: 11px;
+  line-height: 1.7;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  margin: auto 10px 0;
+  padding-top: 18px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+}
+
+.welcome-panel {
+  background: linear-gradient(115deg, #1a2e52, #315ed0);
+  color: #fff;
+  border-radius: 16px;
+  padding: 32px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 190px;
+  overflow: hidden;
+}
+
+.welcome-panel .eyebrow {
+  color: #c6d5ff;
+  margin: 0 0 12px;
+}
+
+.welcome-panel h1 {
+  font-size: clamp(22px, 3vw, 31px);
+  font-weight: 750;
+  margin-bottom: 9px;
+}
+
+.welcome-panel p {
+  color: #dbe5ff;
+  margin: 0;
+  font-size: 14px;
+}
+
+.welcome-trophy {
+  font-size: 76px;
+  opacity: 0.95;
+  padding: 0 25px;
+}
+
+.section-heading {
+  font-size: 21px;
+  font-weight: 750;
+  margin: 0;
+  color: #1d2b43;
+}
+
+.live-label {
+  color: #16845b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.stat-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #e9edf4;
+  border-radius: 13px;
+  min-height: 118px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 16px rgba(26, 43, 73, 0.04);
+  transition: 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgba(26, 43, 73, 0.1);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+}
+
+.stat-icon.purple { background: #f0eaff; }
+.stat-icon.green { background: #e5f8ef; }
+.stat-icon.orange { background: #fff1df; }
+.stat-icon.blue { background: #e6f1ff; }
+.stat-icon.pink { background: #ffeaf1; }
+
+.stat-label {
+  color: #758198;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.stat-number {
+  color: #17243b;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.stat-arrow {
+  margin-left: auto;
+  color: #a1acbd;
+  font-size: 20px;
+}
+
+.content-card {
+  background: #fff;
+  border: 1px solid #e9edf4;
+  border-radius: 13px;
+  padding: 23px;
+  box-shadow: 0 4px 16px rgba(26, 43, 73, 0.035);
+}
+
+.section-title {
+  color: #1e2b43;
+  font-size: 16px;
+  font-weight: 750;
+  margin-bottom: 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-mark {
+  display: inline-block;
+  height: 18px;
+  width: 4px;
+  border-radius: 4px;
+  background: #315ed0;
+}
+
+.page-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+  gap: 15px;
+}
+
+.page-heading-row .eyebrow {
+  margin: 0 0 6px;
+  color: #748198;
+}
+
+.page-title {
+  color: #1d2b43;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #8290a4;
+  font-size: 13px;
+  margin: 0;
+}
+
+.record-count {
+  background: #eaf0ff;
+  color: #3155b7;
+  padding: 8px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.form-label {
+  color: #45536a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.form-control {
+  min-height: 42px;
+  border-color: #dfe5ee;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.form-control:focus {
+  border-color: #6688e8;
+  box-shadow: 0 0 0 3px rgba(49, 94, 208, 0.1);
+}
+
+.btn {
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 650;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.btn-primary {
+  background: #315ed0;
+  border-color: #315ed0;
+}
+
+.search-input {
+  max-width: 270px;
+}
+
+.portal-table {
+  font-size: 12px;
+  color: #46536a;
+}
+
+.portal-table thead th {
+  background: #f5f7fb;
+  color: #66748a;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid #e6ebf2;
+  white-space: nowrap;
+}
+
+.portal-table td,
+.portal-table th {
+  padding: 13px 12px;
+}
+
+.status-pill {
+  background: #e8f7ef;
+  color: #168454;
+  border-radius: 30px;
+  padding: 5px 9px;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+@media (max-width: 850px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: center;
+  }
+
+  .menu-heading,
+  .sidebar-footer {
+    display: none;
+  }
+
+  .sidebar-link {
+    white-space: nowrap;
+    margin: 0 3px;
+    padding: 10px 12px;
+  }
+
+  .main-content {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .admin-label {
+    display: none;
+  }
+
+  .welcome-panel {
+    padding: 24px 20px;
+  }
+
+  .welcome-trophy {
+    font-size: 48px;
+    padding: 0 0 0 10px;
+  }
+
+  .content-card {
+    padding: 16px;
+  }
+
+  .page-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .search-input {
+    max-width: 100%;
+  }
+}

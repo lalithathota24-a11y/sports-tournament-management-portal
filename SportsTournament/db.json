@@ -1,0 +1,48 @@
+{
+  "tournaments": [
+    {
+      "id": "1",
+      "name": "Premier Cricket League",
+      "sport": "Cricket",
+      "date": "2026-11-15",
+      "location": "Hyderabad",
+      "status": "Upcoming"
+    }
+  ],
+  "teams": [
+    {
+      "id": "1",
+      "name": "Royal Challengers",
+      "sport": "Cricket",
+      "captain": "Rahul",
+      "tournamentId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Super Kings",
+      "sport": "Cricket",
+      "captain": "Arjun",
+      "tournamentId": "1"
+    }
+  ],
+  "players": [
+    {
+      "id": "2",
+      "name": "Arjun",
+      "age": 23,
+      "role": "Bowler",
+      "teamId": "2"
+    }
+  ],
+  "matches": [
+    {
+      "id": "1",
+      "team1": "Royal Challengers",
+      "team2": "Super Kings",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "status": "Scheduled"
+    }
+  ],
+  "results": []
+}
